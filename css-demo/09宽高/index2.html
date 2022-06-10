@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            使用百分百是基于父亲的
+            如果父亲是100px, 那么百分百就是50px
+        */
+        /* 去除默认margin */
+        body,html {
+            margin: 0;
+            height: 100%;
+        }
+        .myClass {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 宽度100%, 高度100% -->
+    <div class="myClass">
+        <!-- 宽度100px, 高度100px -->
+        <div style="width: 100px;height: 100px;background-color: blue;">
+            <!-- 宽度50%, 高度50% -->
+            <div style="width: 50%;height: 50%;background-color: yellow;"></div>
+        </div>
+    </div>
+</body>
+</html>

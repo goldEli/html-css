@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            outline: solid red;
+        /* 去除默认margin */
+        body,html {
+            margin: 0;
         }
         .myClass {
-            width: 100px;
+            width: 100%;
             height: 100px;
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <!-- 宽度100px, 高度100px -->
+    <!-- 宽度100%, 高度300px -->
     <div class="myClass"></div>
 </body>
 </html>
