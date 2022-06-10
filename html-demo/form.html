@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="demo_form.php" method="get">
+      <!-- 输入姓名 -->
+      <div style="margin-bottom:10px;">
+        <span>*</span><span>姓名：</span
+        ><input placeholder="请输入姓名（中文）" type="text" />
+      </div>
+      <!-- 输入电话 -->
+      <div>
+        <span>*</span><span>电话：</span
+        ><input placeholder="请输入电话" type="text" />
+      </div>
+      <!-- 输入密码 -->
+      <div>
+        <span>*</span><span>密码：</span
+        ><input placeholder="请输入密码" type="password" />
+      </div>
+
+      <!-- 确认密码 -->
+      <div>
+        <span>*</span><span>确认密码：</span
+        ><input placeholder="请确认密码" type="password" />
+      </div>
+
+      <!-- 选择性别 -->
+      <div>
+        <span>性别：</span><input type="radio" /><span>男</span
+        ><input type="radio" /><span>女</span>
+      </div>
+      <!-- 选择城市 -->
+      <div>
+        <span>所在城市：</span>
+        <select>
+          <option>成都</option>
+          <option>重庆</option>
+          <option>西安</option>
+        </select>
+      </div>
+      <!-- 选择日期 -->
+      <div><span>出生日期：</span><input type="date" /></div>
+      <!-- 上传文件 -->
+      <div><span>上传文件：</span><input type="file" /></div>
+      <!-- 自我介绍 -->
+      <div><span>自我介绍：</span><textarea></textarea></div>
+      <!-- 同意用户协议 -->
+      <div><input type="checkbox" /><span>同意《用户协议》</span></div>
+    </form>
+    <!-- 注册按钮 -->
+    <button>注册</button>
+  </body>
+</html>
