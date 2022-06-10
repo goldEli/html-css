@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .myClass {
-            width: 300px;
-            height: 300px;
-            /* border: 1px solid red; */
-            border: 1px dashed red;
-            border-radius: 50%;
-        }
+      .square {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+      }
+      .square1 {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed red;
+      }
+      .square2 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 20px;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
     </style>
-</head>
-<body>
-    <div class="myClass"></div>
-</body>
+  </head>
+  <body>
+    <!-- 宽度200px，高度300px红色正方形 -->
+    <div class="square"></div>
+    <hr />
+    <!-- 宽度200px，高度300px红色正方形，虚线 -->
+    <div class="square1"></div>
+    <hr />
+
+    <!-- 宽度200px，高度300px红色正方形,倒角20px -->
+    <div class="square2"></div>
+    <hr />
+
+    <!-- 直径100px黑色圆 -->
+    <div class="circle"></div>
+    <hr />
+  </body>
 </html>
