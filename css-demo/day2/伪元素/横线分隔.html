@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .or {
+        text-align: center;
+      }
+
+      .or::after,
+      .or::before {
+        content: "";
+        position: absolute; 
+        top: 12px;
+        height: 1px;
+        background-color: #ccc;
+        width: calc(50% - 20px);
+      }
+
+      .or::after {
+        top: 27px;
+        right: 0;
+      }
+
+      .or::before {
+        top: 27px;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="or">or</p>
+  </body>
+</html>
