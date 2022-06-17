@@ -12,12 +12,12 @@
       <!-- 输入姓名 -->
       <div style="margin-bottom:10px;">
         <span>*</span><span>姓名：</span
-        ><input placeholder="请输入姓名（中文）" type="text" />
+        ><input name="user" placeholder="请输入姓名（中文）" type="text" />
       </div>
       <!-- 输入电话 -->
       <div>
         <span>*</span><span>电话：</span
-        ><input placeholder="请输入电话" type="text" />
+        ><input name="password" placeholder="请输入电话" type="text" />
       </div>
       <!-- 输入密码 -->
       <div>
@@ -40,7 +40,7 @@
       <div>
         <span>所在城市：</span>
         <select>
-          <option>成都</option>
+          <option value="1">成都</option>
           <option>重庆</option>
           <option>西安</option>
         </select>
@@ -53,6 +53,7 @@
       <div><span>自我介绍：</span><textarea></textarea></div>
       <!-- 同意用户协议 -->
       <div><input type="checkbox" /><span>同意《用户协议》</span></div>
+      <input type="commit" value="提交" />
     </form>
     <!-- 注册按钮 -->
     <button>注册</button>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearDiv:after{
+            content: '';
+            display: block;
+            clear:both;
+        }
+        .clearDiv div{
+          	float: left;
+      	}
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="clearDiv">
+        <div id="mydiv1"></div>
+      	<div id="mydiv2"></div>
+        <div class="clear"></div>
+    </div>
+    <div id="banner"></div>
+</body>
+</html>
