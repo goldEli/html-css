@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        position: relative;
+        overflow: hidden;
+      }
+      .box img {
+        width: 200px;
+      }
+      .title {
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .box:hover .title {
+        bottom: 0;
+        transition: 0.5s linear;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../../../resource/images/deer_square.png" />
+      <div class="title">
+        <p>这是麋鹿</p>
+      </div>
+    </div>
+  </body>
+</html>
