@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        background: #cc66dd;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        background: #3333dd;
+        display: none;
+      }
+      .parent:hover .child {
+        display: block;
+      }
+    </style>
+    <body>
+      <div class="parent">
+        父
+        <div class="child">子</div>
+      </div>
+    </body>
+  </head>
+</html>
