@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>动画</title>
+    <style>
+        
+      #div2 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: absolute;
+        animation: mydonghua1 2s infinite; /*调用动画规则*/
+      }
+      /*首先使用动画  要先定义动画规则*/
+      @keyframes mydonghua {
+        /*简单规则*/
+        from {
+          margin-left: 0px;
+        }
+        to {
+          margin-left: 200px;
+        }
+      }
+      @keyframes mydonghua1 {
+        /* 复杂规则  想定义多少点就定义多少个点 */
+        0% {
+          bottom: 0;
+          left: 0;
+          background-color: pink;
+        }
+        75% {
+          bottom: 400px;
+          left: 600px;
+          background-color: yellowgreen;
+        }
+        90% {
+          bottom: 300px;
+          left: 800px;
+          background-color: #ff4b1c;
+        }
+        100% {
+          bottom: 0px;
+          left: 1000px;
+          background-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div2"></div>
+  </body>
+</html>
