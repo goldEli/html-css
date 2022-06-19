@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+      }
+      .box p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box; /* 对象作为弹性伸缩盒子模型 */
+        -webkit-box-orient: vertical; /* 设置或检索伸缩盒对象的子元素的排列方式 */
+        -webkit-line-clamp: 2; /*设置元素最多显示行数，父元素需填写宽度才明显*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        到我家来快结束了的房间爱死了爱上了对方就看了看大家发来的时间爱上了对方就阿斯拉达阿萨德浪费阿斯加德
+      </p>
+    </div>
+  </body>
+</html>
