@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .select-box {
+        width: 100px;
+        height: 25px;
+        background-color: coral;
+        z-index: 1;
+        /* position: relative; */
+      }
+      .select-box:hover .content {
+        display: block;
+      }
+      .content {
+        /* position: absolute;
+        bottom: -100px;
+        left: 20px; */
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+      .content p {
+        padding: 8px;
+      }
+      .content p:hover {
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="select-box">
+      <span>language</span>
+      <div class="content">
+        <p>繁体中文</p>
+        <p>English</p>
+      </div>
+    </div>
+    <!-- <p>我是底部</p> -->
+  </body>
+</html>
