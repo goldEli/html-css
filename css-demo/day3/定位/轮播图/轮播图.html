@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        /* overflow: hidden; */
+      }
+      .box img {
+        width: 100%;
+      }
+      .left-icon,
+      .right-icon {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .left-icon {
+        position: absolute;
+        left: 0;
+        top: 175px;
+      }
+      .circles {
+        width: 200px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circles li {
+        width: 8px;
+        height: 8px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 0 10px;
+        list-style-type:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./car.png" />
+      <div class="left-icon">&lt;</div>
+      <div class="right-icon">&gt;</div>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>
