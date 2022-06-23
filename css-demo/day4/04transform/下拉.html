@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入 icon-font css -->
+    <link rel="stylesheet" href="./icon-font/iconfont.css" />
+    <!-- 引入 icon-font js -->
+    <script src="./icon-font/iconfont.js"></script>
+    <title>Document</title>
+    <style>
+      .box {
+        /* display: flex; */
+      }
+      .box:hover {
+        cursor: pointer;
+      }
+
+      .box:hover .icon-xiangxia2 {
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>菜单</span>
+      <span class="iconfont icon-xiangxia2"></span>
+    </div>
+  </body>
+</html>
