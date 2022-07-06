@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .father {
+      .father,.fa {
         width: 300px;
         height: 300px;
         background-color: gray;
         position: relative;
       }
-      .child1 {
+      .child {
         width: 50px;
         height: 50px;
         background-color: red;
         position: absolute;
         left: 50px;
         top: 50px;
-        z-index: 1;
+        /* z-index: 1; */
+      }
+      .son {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        position: absolute;
+        left: 50px;
+        top: -200px;
       }
       .child2 {
         width: 100px;
@@ -28,13 +36,18 @@
         position: absolute;
         left: 50px;
         top: 50px;
+        z-index: 1;
       }
     </style>
   </head>
   <body>
+    <div style="z-index:2;width: 100%;height:30px;background: red;position:fixed"></div>
     <div class="father">
       <div class="child1"></div>
       <div class="child2"></div>
+    </div>
+    <div class="fa">
+      <div class="son"></div>
     </div>
   </body>
 </html>
