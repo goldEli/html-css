@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fa {
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            display: flex;
+            /* 纵向布局 */
+            flex-direction: column;
+            /* 告诉浏览器 横向如何排布 */
+            align-items: center;
+            /* 高度浏览器 纵向如何排布 */
+            justify-content: center;
+        }
+        .son {
+            width: 50px;
+            height: 50px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fa">
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+</body>
+</html>

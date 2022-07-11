@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rebeccapurple;
-            width: 300px;
-            height: 300px;
-        }
-        .item {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-        }
+      /* 上下左右都居中 */
+      .father {
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        /* 告诉浏览器，我的儿子们要进行布局 */
+        display: flex;
+        /* 默认横向布局 */
+
+        /* flex-direction: row; */
+
+        /* 告诉浏览器 横向如何排布 */
+        justify-content: center;
+        /* 告诉浏览器 纵向如何排布 */
+        align-items: center;
+      }
+      .son {
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+        border: 1px solid red;
+      }
     </style>
-</head>
-<body>
-    <div class="box">
-        <div class="item"></div>
+  </head>
+  <body>
+    <div class="father">
+      <div class="son"></div>
+      <div class="son"></div>
+      <div class="son"></div>
     </div>
-</body>
+  </body>
 </html>
