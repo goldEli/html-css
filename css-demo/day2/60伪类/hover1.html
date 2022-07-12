@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover box 想让他的儿子 son, 字体改为20px */
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 1px solid red;
+        }
+        /* hover box 改变 son */
+        /* hover 自己 让儿子改变 */
+        .box:hover .son{
+            cursor: pointer;
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="son">box儿子</p>
+    </div>
+</body>
+</html>

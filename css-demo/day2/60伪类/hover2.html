@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .text:hover {
+      /* hover 自己让兄弟改变 */
+      .box1:hover + .box2 {
         color: red;
-        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <p class="text">鼠标放到我身上会变红, 点我会变绿</p>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
   </body>
 </html>
