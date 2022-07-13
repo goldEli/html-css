@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        width: 200px;
+        /* height: 200px; */
+        /* background: #cc66dd; */
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        background: #3333dd;
+        display: none;
+      }
+      .child > p {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .parent:hover .child {
+        display: block;
+      }
+      .child > p:hover {
+        background-color: gray;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    </style>
+    <body>
+      <div class="parent">
+        <span>菜单</span>
+        <div class="child">
+          <p>中文</p>
+          <p>英文</p>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
