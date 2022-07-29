@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>登录</h1>
+    <!-- 
+        action: 后端的接口地址
+        method:
+            get 向后端获取信息
+            post向后端传递信息
+     -->
+    <form action="demo.php" method="post">
+      <div>
+        <span>账号：</span>
+        <!-- 
+          name 后端给我们的字段名（name不能重复）
+          placeholder 提示用户
+          type="text" 输入的文本
+         -->
+        <input name="user" placeholder="账号名/邮箱/手机号" type="text" />
+      </div>
+      <div>
+        <span>密码：</span>
+        <!-- 
+          type="password" 输入的密码
+         -->
+        <input name="password" placeholder="请输入登录密码" type="password" />
+      </div>
+      <!-- 
+        按钮必须在 from 标签内
+       -->
+      <button>登录</button>
+    </form>
+  </body>
+</html>

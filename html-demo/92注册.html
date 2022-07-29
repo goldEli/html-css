@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>注册</h1>
+    <form action="demo.php" method="post">
+      <div>
+        <span>账号：</span>
+        <!-- maxlength 限制输入长度 -->
+        <input maxlength="11" name="account" type="text" placeholder="输入手机号" />
+      </div>
+      <div>
+        <span>密码：</span>
+        <!-- disabled 禁止操作 -->
+        <input disabled name="password" type="password" placeholder="至少8位英文+数字" />
+      </div>
+      <div>
+        <span>确认密码：</span>
+        <input
+          name="confirmPassword"
+          type="password"
+          placeholder="至少8位英文+数字"
+        />
+      </div>
+      <div>
+        <span>性别：</span>
+        <!-- value 就是后端定义的 -->
+        <input type="radio" name="male" value="0" /><span>男</span>
+        <input type="radio" name="female" value="1" /><span>女</span>
+      </div>
+      <div>
+        <input type="checkbox" name="agreeUserAgreement" value="1" />
+        <span>同意<a href="https://www.baidu.com">《用户协议》</a></span>
+      </div>
+      <div>
+        <span>爱好：</span>
+        <input type="checkbox" /> <span>游戏</span> <input type="checkbox" />
+        <span>游泳</span> <input type="checkbox" /> <span>学习</span>
+      </div>
+      <div>
+        <span>出生日期:</span>
+        <input type="date" />
+      </div>
+      <div>
+        <span>上传文件:</span>
+        <input name="file" type="file" />
+      </div>
+      <div>
+        <span>输入年龄: </span>
+        <input type="number" />
+      </div>
+      <div>
+        <span>所在的城市：</span>
+        <select name="city">
+            <option value="0">成都</option>
+            <option value="1">重庆</option>
+            <option value="2">西安</option>
+        </select>
+      </div>
+      <div>
+        <span>自我介绍：</span>
+        <textarea cols="10" rows="10"></textarea>
+      </div>
+      <button>提交</button>
+    </form>
+  </body>
+</html>
