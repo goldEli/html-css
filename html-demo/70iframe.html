@@ -7,14 +7,20 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>这个我的网页</h1>
+    <!-- 
+      iframe 嵌套别的网页
+     -->
+    <!-- 外部网页 -->
     <iframe
-     style="width: 1000px;height: 500px;"
-      src="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9101189919473452691%22%7D&n_type=-1&p_from=-1"
-    ></iframe>
-
-    <iframe
-     style="width: 1000px;height: 500px;"
-      src="./index.html"
-    ></iframe>
+      style="width: 1000px; height: 500px"
+      src="https://haokan.baidu.com/v?pd=wisenatural&vid=632460669831468699"
+    >
+    </iframe>
+    <!-- 内部网页 -->
+    <iframe style="width: 1000px; height: 500px" src="./常用标签.html">
+    </iframe>
+    <!-- 很多网站为了安全会拒绝嵌套 -->
+    <iframe src="https://www.baidu.com/"></iframe>
   </body>
 </html>
