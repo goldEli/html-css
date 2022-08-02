@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 700px;
+            height: 500px;
+            border: 1px solid red;
+            background-image: url("./images/flower.jpg");
+            /* 不重复 */
+            background-repeat: no-repeat;
+            /* 调整背景图的宽高 
+                auto：真实大小
+                200px 300px： 宽度200px 高度300px （但是图片我们一般只设置一个值）
+                cover 保证覆盖所有宽高，但是可能导致图片溢出（截取）⚠️
+                contain 保证“尽”可能覆盖所有宽高，保证图片完整
+            */
+            /* background-size: 700px; */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
