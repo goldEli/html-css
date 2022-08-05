@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        /* overflow: hidden; */
+      }
+      .box > P {
+        /* 对象作为弹性伸缩盒子 */
+        display: -webkit-box;
+        /* 设置方向 */
+        -webkit-box-orient: vertical;
+        /* 显示多少行 */
+        -webkit-line-clamp: 3;
+        /* 溢出隐藏 */
+        overflow: hidden; 
+        /* 显示省略好 */
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p title="双方就爱上了科技爱上的看法结案率水电费加大了咖啡机啊飒飒大飞机拉伸的风景卡洛斯大赛的福建阿斯拉达反馈">
+        <!-- GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories -->
+        双方就爱上了科技爱上的看法结案率水电费加大了咖啡机啊飒飒大飞机拉伸的风景卡洛斯大赛的福建阿斯拉达反馈
+      </p>
+    </div>
+  </body>
+</html>
